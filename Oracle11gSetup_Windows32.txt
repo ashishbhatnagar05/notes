@@ -1,0 +1,26 @@
+1:	Install 11g and SQL developer
+2: 	Provide password during installation
+3:	Got to bin and run sqlplus
+4:	Enter :SYSTEM
+5: 	Password: the one provided at the time of installation
+6:	Create user: CREATE USER ASHISH IDENTIFIED BY ASHISH;
+7:
+GRANT CREATE SESSION to ASHISH;
+GRANT CREATE TABLE to ASHISH;
+GRANT UNLIMITED TABLESPACE to ASHISH;
+GRANT SELECT ANY TABLE to ASHISH;
+GRANT UPDATE ANY TABLE to ASHISH;
+GRANT INSERT ANY TABLE to ASHISH;
+GRANT DROP ANY TABLE to ASHISH;
+
+8: Create table:
+CREATE TABLE student(
+id VARCHAR2(5),
+name VARCHAR2(30),
+CONSTRAINT id_pk PRIMARY KEY(id)
+);
+
+9: INSERT
+
+INSERT INTO student VALUES('1','ASHISH');
+INSERT INTO student VALUES('2','AMAN');
